@@ -91,5 +91,13 @@ gem 'omniauth-rails_csrf_protection'
 gem 'font-awesome-sass', '~> 6.4.0'
 gem 'kaminari', '~> 1.2'
 
+
 # 按讚
 gem 'acts_as_votable'
+
+gem "kaminari", "~> 1.2"
+# 軟刪除
+gem 'paranoia', '~> 2.6', '>= 2.6.1'
+gem 'friendly_id', '~> 5.5'
+gem 'babosa', '~> 2.0'
+
