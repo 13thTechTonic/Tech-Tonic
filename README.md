@@ -17,27 +17,21 @@
 git clone https://github.com/your-username/tech-tonic.git
 ```
 
-2. 安裝所需的依賴項：
+2. 設定環境：
 
 ```bash
 cd tech-tonic
-bundle install
+`config/database.yml`
+`example.env`
 ```
 
-3. 創建並執行數據庫遷移：
+3. 啟動 docker-compose：
 
 ```bash
-rails db:create
-rails db:migrate
+docker-compose up --build
 ```
 
-4. 啟動本地開發伺服器：
-
-```bash
-rails server
-```
-
-5. 在瀏覽器中訪問：
+4. 在瀏覽器中訪問：
 
 ```bash
 http://localhost:3000/
