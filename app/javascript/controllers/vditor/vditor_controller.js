@@ -37,7 +37,7 @@ export default class extends Controller {
     let el = document.createElement("div");
     el.setAttribute("name", "post[content]");
     const content = this.vditor.getValue();
-    el.textContent = content;
+    el.textContent = "\b\n" + content;
     // 標題
     const title = this.element.querySelector("#post_title").value || "無標題";
     // 標籤
@@ -84,7 +84,7 @@ export default class extends Controller {
     let el = document.createElement("div");
     el.setAttribute("name", "post[content]");
     const content = this.vditor.getValue();
-    el.textContent = content;
+    el.textContent = "\b\n" + content;
 
     //標題
     const title = this.element.querySelector("#post_title").value || "無標題";
@@ -94,7 +94,7 @@ export default class extends Controller {
     // 發送API
     const response = await post("/posts", {
       body: JSON.stringify({
-        content: el.textContent,
+        content: "\b" + el.textContent,
         title,
         tag_list: tagList,
         status: "published",

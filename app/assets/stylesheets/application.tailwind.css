@@ -64,5 +64,8 @@
   .dropdown-menu-open {
     @apply block opacity-100;
   }
+  .button-main-color {
+    @apply bg-blue-500
+  }
 }
 
