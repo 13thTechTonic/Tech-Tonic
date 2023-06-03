@@ -20,9 +20,10 @@ git clone https://github.com/your-username/tech-tonic.git
 2. 設定環境：
 
 ```bash
-cd tech-tonic
+修改 database.yml
 `config/database.yml`
-`example.env`
+參照範例新增 .env
+example.env
 ```
 
 3. 啟動 docker-compose：
