@@ -1,13 +1,13 @@
-<%= render "users/shared/user_banner" %>
-<section class="flex justify-center mt-16">
+<section class="flex justify-center mt-16 min-h-[100vh]">
 
   <%= render "users/shared/side_menu"%>
-  <section class="ml-6 w-6/12 bg-white border rounded shadow-[0_5px_15px_rgba(0,0,0,0.03)]  border-project-blue-base">
+  <section class="w-[746px] ml-2 bg-white border rounded shadow-[0_5px_15px_rgba(0,0,0,0.03)]  border-project-blue-base mb-16">
     <!-- component -->
+
     <div class="min-h-screen my-16 bg-white ui-sans-serif font-ui-sans-serif">
         <div class="container mx-auto">
             <div class="w-full max-w-2xl p-6 mx-auto inputs">
-                <h2 class="text-2xl text-gray-900">帳戶設定</h2>
+                <h2 class="text-2xl text-gray-900">個人設定</h2>
                 <form class="pt-4 mt-6 border-t border-gray-400">
                     <div class='flex flex-wrap mb-6 -mx-3'>
                        <%= form_with(model: resource, class: "flex flex-col justify-center w-1/2", as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
